@@ -7,6 +7,12 @@ document
     const withdrow = document.getElementById("withdrow-amount");
     const preTotal = document.getElementById("total-balance");
 
+    if(withdrowAmount>parseFloat(preTotal.innerText)){
+        alert('Not enough balance');
+        return;
+        
+    }
+
 
     const totalWithdrow =parseFloat(withdrowAmount) + parseFloat(withdrow.innerText);
     const total = parseFloat(preTotal.innerText) - (withdrowAmount);
