@@ -4,6 +4,12 @@ document
     const withdrowButton = document.getElementById("withdrow-field");
     const withdrowAmount = parseFloat(withdrowButton.value);
 
+    withdrowButton.value = "";
+    if(isNaN(withdrowAmount)){
+        alert('please enter a valid amount');
+        return;
+    }
+
     const withdrow = document.getElementById("withdrow-amount");
     const preTotal = document.getElementById("total-balance");
 
@@ -20,5 +26,5 @@ document
     withdrow.innerText = parseFloat(totalWithdrow);
     preTotal.innerText = parseFloat(total);
 
-    withdrowButton.value = "";
+    
   });
