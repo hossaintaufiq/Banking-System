@@ -14,17 +14,55 @@
 <body>
 
     <header>
-        <h1 class="text-center mt-7 text-4xl font-semibold">Let's get some <span class="text-red-400 font-extrabold"> Mooooooooney</span></h1>
-
-
+        <h1 class="text-center mt-7 text-4xl font-semibold">Let's get some <span class="text-red-400 font-extrabold">
+                Mooooooooney</span></h1>
     </header>
     <main>
+
+        <section class="mt-8">
+            <div class="grid gap-4 grid-cols-3  p-8 w-9/12 mx-auto">
+                <div class="bg-red-400 p-8 text-white rounded-lg">
+                    <h2 class="text-2xl">Deposite</h2>
+                    <h2 class="text-3xl" >$<span id="deposit-amount">00</span></h2>
+                </div>
+                <div class="bg-amber-200 p-8 text-white rounded-lg">
+                    <h2 class="text-2xl">Withdrow</h2>
+                    <h2 class="text-3xl" >$<span id="withdrow-amount">00</span></h2>
+                </div>
+                <div class="bg-lime-400 p-8 text-white rounded-lg">
+                    <h2 class="text-2xl">Balance</h2>
+                    <h2 class="text-3xl" >$<span id="total-balance">1240</span></h2>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- withdrow section  -->
+        <section>
+            <div class="grid gap-4 grid-cols-2  p-8 w-9/12 mx-auto">
+                <div class="bg-teal-400 p-8 text-white rounded-lg ">
+                    <h2 class="text-2xl"> Deposit Amount</h2>
+                    <input type="email" name="" id="deposit-field" placeholder="Enter Amount" class="w-9/12 rounded-sm mt-4 text-black">
+                    <button id="button-deposit" class="btn bg-emerald-200 border-none px-10 mt-4">submit</button>
+
+                </div>
+                <div class="bg-sky-200 p-8 text-white rounded-lg">
+                    <h2 class="text-2xl">Withdrow Amount</h2>
+                    <input type="email" name="" id="withdrow-field" placeholder="Enter Amount"class="w-9/12 rounded-sm mt-4 text-black">
+                    <button id="button-withdrow" class="btn bg-emerald-200 border-none px-10 mt-4">submit</button>
+                </div>
+
+            </div>
+
+        </section>
+
 
     </main>
     <footer>
 
     </footer>
-    <script src="./js/login.js"></script>
+    <script src="./js/deposite.js"></script>
+    <script src="./js/withdrow.js"></script>
 
 </body>
 
